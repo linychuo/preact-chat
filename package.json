@@ -1,0 +1,36 @@
+{
+  "name": "preact-chat",
+  "version": "1.0.0",
+  "description": "chat room by preact and socket.io",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/src/server/index.js",
+    "sb": "./node_modules/.bin/babel src/server/*.js -d dist/",
+    "cb": "./node_modules/.bin/preact build --src src/client --dest dist/public --no-prerender",
+    "dev": "./node_modules/.bin/preact watch --src src/client",
+    "lint": "eslint src"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-synacor"
+  },
+  "author": "LiYongchao",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "preact": "^8.2.6",
+    "preact-router": "^2.6.0",
+    "socket.io": "^2.0.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.13.0",
+    "eslint-config-synacor": "^2.0.2",
+    "preact-cli": "^2.1.0"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}

@@ -1,2 +1,2 @@
 # preact-chat
-chat room by preact and socket.io
+Chat room by [preact](https://preactjs.com/) and [socket.io](https://socket.io/)
