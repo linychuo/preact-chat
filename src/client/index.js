@@ -193,7 +193,7 @@ class LoginPage extends Component {
 		return (
 			<li class="login page">
 				<div class="form">
-					<h3 class="title">What's your nickname?</h3>
+					<h3 class="title">What is your nickname?</h3>
 					<input class="usernameInput" type="text" maxlength="14" onKeyDown={this.onKeyDown} />
 				</div>
 			</li>
