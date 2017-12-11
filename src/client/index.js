@@ -2,7 +2,6 @@ import './style';
 import { Component } from 'preact';
 import { route, Router } from 'preact-router';
 import io from 'socket.io-client';
-import { setTimeout } from 'timers';
 
 const TYPING_TIMER_LENGTH = 400; // ms
 const socket = io();
